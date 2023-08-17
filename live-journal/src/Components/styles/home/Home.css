@@ -1,0 +1,46 @@
+.home-field {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  padding: 20px;
+  border: 2px solid rgb(55, 194, 148);
+}
+.error-text {
+  margin-top: -20px;
+  width: 100%;
+  height: 40px;
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: larger;
+}
+.home-title {
+  text-align: center;
+  color: rgb(37, 134, 101);
+}
+.home-textarea {
+  font-size: large;
+  text-indent: 30px;
+  border: 2px solid rgb(55, 194, 148);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.home-btn {
+  width: 50%;
+  height: 40px;
+  background-color: white;
+  font-size: larger;
+  border: 2px solid rgb(55, 194, 148);
+  color: rgb(37, 134, 101);
+}
+#send:hover {
+  color: white;
+  background-color: rgb(55, 194, 148);
+}
+#clear:hover {
+  color: white;
+  background-color: salmon;
+  border-color: salmon;
+}

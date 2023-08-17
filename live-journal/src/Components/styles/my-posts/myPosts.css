@@ -1,0 +1,36 @@
+.all-blok {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 72px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.blok-for-posts {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin-top: 30px;
+  border: 2px solid black;
+  background-color: rgb(121, 191, 168);
+}
+.my-posts-blok {
+  position: relative;
+  width: 500px;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid;
+  margin-bottom: 20px;
+  padding: 10px 10px 30px 10px;
+}
+.date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+  border-top: 1px solid;
+  padding-top: 5px;
+}
