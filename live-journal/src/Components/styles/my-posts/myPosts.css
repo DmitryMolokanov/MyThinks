@@ -7,6 +7,31 @@
   height: 100%;
   background-color: white;
 }
+.form-edit {
+  position: relative;
+  display: none;
+  margin-top: 30px;
+  padding: 20px 20px;
+  height: fit-content;
+  border: 1px solid;
+  background-color: rgb(121, 191, 168);
+}
+.close-form-edit {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  border: 0px;
+}
+.close-form-edit:hover {
+  background-color: white;
+  color: red;
+}
+
+.form-edit-btn {
+  margin-top: 10px;
+  background-color: white;
+  border: 0;
+}
 
 .blok-for-posts {
   width: fit-content;
@@ -33,4 +58,20 @@
   height: fit-content;
   border-top: 1px solid;
   padding-top: 5px;
+}
+
+.btn-edit-post {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.btn-edit-post:hover {
+  background-color: rgb(121, 191, 168);
+  color: white;
+}
+
+.my-posts-text {
+  margin-top: 15px;
+  text-align: justify;
 }
