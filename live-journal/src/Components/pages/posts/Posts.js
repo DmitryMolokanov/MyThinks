@@ -64,7 +64,6 @@ function Posts() {
                 }`
               : "unknown"}{" "}
             <br />
-            {isData ? `First post: ${dataPosts[0].date}` : "unknown"} <br />
             {isData
               ? `Last post: ${dataPosts[dataPosts.length - 1].date}`
               : "unknown"}
@@ -88,7 +87,10 @@ function Posts() {
                     <div className="user-name">
                       {`User: ${item.userName}`}
 
-                      <button className="favorites" onClick={chooseFavorite}>
+                      <button
+                        className="favorites-btn"
+                        onClick={chooseFavorite}
+                      >
                         add to favorites
                         <div style={{ display: "none" }}>{item._id}</div>
                       </button>

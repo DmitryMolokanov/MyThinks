@@ -160,7 +160,6 @@ app.post("/remove_favorite", jsonParser, async (req, res) => {
 //заменить документ
 
 app.post("/edit_post", jsonParser, async (req, res) => {
-  console.log(req.body);
   try {
     await mongoClient.connect();
     const db = mongoClient.db("users");
@@ -169,7 +168,6 @@ app.post("/edit_post", jsonParser, async (req, res) => {
       { _id: new ObjectId(req.body.id) },
       { $set: { text: req.body.text, date: req.body.date } }
     );
-    console.log(result);
   } catch (err) {
     console.log(err);
   }

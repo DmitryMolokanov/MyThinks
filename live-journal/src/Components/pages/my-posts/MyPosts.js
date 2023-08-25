@@ -51,7 +51,7 @@ function MyPosts() {
       text: editPostForm.current.value,
       date: `Updated (${getDate()})`,
     };
-    fetch("/edit_post", {
+    await fetch("/edit_post", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(editPost),
