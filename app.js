@@ -157,6 +157,24 @@ app.post("/remove_favorite", jsonParser, async (req, res) => {
   }
 });
 
+//заменить документ
+
+app.post("/edit_post", jsonParser, async (req, res) => {
+  console.log(req.body);
+  try {
+    await mongoClient.connect();
+    const db = mongoClient.db("users");
+    const collection = db.collection("posts");
+    const result = await collection.findOneAndUpdate(
+      { _id: new ObjectId(req.body.id) },
+      { $set: { text: req.body.text, date: req.body.date } }
+    );
+    console.log(result);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 app.listen(3001, () => {
   console.log("server started");
 });
